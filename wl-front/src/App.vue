@@ -61,7 +61,7 @@ export default {
       disabled_pdf: true,
       file: '',
       visible_results: false,
-      text: "HELOL",
+      text: "",
     }
   },
   filters: {
@@ -117,7 +117,7 @@ export default {
       let formData = new FormData();
       formData.append('file', this.file);
       axios
-      .post('/pdf/',
+      .post('http://winstonlutz.herokuapp.com/pdf/',
         formData,
         {
           headers: {
