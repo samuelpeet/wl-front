@@ -50,6 +50,7 @@
 
 <script>
 import axios from 'axios'
+axios.defaults.baseURL = 'http://winstonlutz.herokuapp.com';
 
 export default {
   name: 'App',
@@ -88,7 +89,7 @@ export default {
       let formData = new FormData();
       formData.append('file', this.file);
       axios
-      .post('http://winstonlutz.herokuapp.com/results',
+      .post('/results/',
         formData,
         {
           headers: {
@@ -117,7 +118,7 @@ export default {
       let formData = new FormData();
       formData.append('file', this.file);
       axios
-      .post('http://winstonlutz.herokuapp.com/pdf',
+      .post('/pdf/',
         formData,
         {
           headers: {
