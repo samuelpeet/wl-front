@@ -88,7 +88,7 @@ export default {
       let formData = new FormData();
       formData.append('file', this.file);
       axios
-      .post('/results/',//'http://winstonlutz.herokuapp.com/results/',
+      .post('http://winstonlutz.herokuapp.com/results/',
         formData,
         {
           headers: {
